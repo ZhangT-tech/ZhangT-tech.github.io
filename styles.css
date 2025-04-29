@@ -23,8 +23,26 @@ body {
 
 /* Header & Navigation */
 header {
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
 }
 
 nav ul {
@@ -84,23 +102,25 @@ nav ul li a {
 }
 
 /* Publications and Thoughts */
-.publication-item,
-.thought-item {
+.publication-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
 
-.publication-item:last-child,
-.thought-item:last-child {
+.publication-item:last-child {
     border-bottom: none;
 }
 
-.publication-meta,
-.thought-meta {
+.publication-meta {
     color: #666;
     font-size: 0.9rem;
     margin: 0.5rem 0;
+}
+
+.publication-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 
 /* Links */
@@ -111,13 +131,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Contact Section */
-.contact-links {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
 }
 
 /* Footer */
