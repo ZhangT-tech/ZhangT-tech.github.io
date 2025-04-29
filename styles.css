@@ -1,9 +1,14 @@
 :root {
     --primary-color: #2c3e50;
-    --highlight-color: #3498db;
+    --github-color: #24292e;
+    --linkedin-color: #0077b5;
+    --scholar-color: #4285f4;
+    --cv-color: #34a853;
+    --title-color: #1a73e8;
     --text-color: #333;
     --light-bg: #f8f9fa;
     --white: #ffffff;
+    --link-color: #4285f4;  /* Light blue color for all links and title */
 }
 
 * {
@@ -212,4 +217,77 @@ section {
 
 .education-item {
     margin-bottom: 0.5rem;
+}
+
+/* Main Title */
+.main-title {
+    color: var(--link-color);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Links */
+.hero .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.hero .contact-links a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: var(--link-color);
+    border: 2px solid var(--link-color);
+}
+
+.hero .contact-links a:hover {
+    background-color: var(--link-color);
+    color: white;
+}
+
+.github-link {
+    color: var(--github-color);
+    border: 2px solid var(--github-color);
+}
+
+.github-link:hover {
+    background-color: var(--github-color);
+    color: white;
+}
+
+.linkedin-link {
+    color: var(--linkedin-color);
+    border: 2px solid var(--linkedin-color);
+}
+
+.linkedin-link:hover {
+    background-color: var(--linkedin-color);
+    color: white;
+}
+
+.scholar-link {
+    color: var(--scholar-color);
+    border: 2px solid var(--scholar-color);
+}
+
+.scholar-link:hover {
+    background-color: var(--scholar-color);
+    color: white;
+}
+
+.cv-link {
+    color: var(--cv-color);
+    border: 2px solid var(--cv-color);
+}
+
+.cv-link:hover {
+    background-color: var(--cv-color);
+    color: white;
 } 
