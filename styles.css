@@ -1,5 +1,6 @@
 :root {
     --primary-color: #2c3e50;
+    --highlight-color: #3498db;
     --text-color: #333;
     --light-bg: #f8f9fa;
     --white: #ffffff;
@@ -36,13 +37,8 @@ header {
 }
 
 .contact-links a {
-    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
 }
 
 nav ul {
@@ -56,6 +52,11 @@ nav ul li a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
 }
 
 /* Hero Section */
@@ -64,12 +65,23 @@ nav ul li a {
     margin-bottom: 4rem;
 }
 
+.hero .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.hero .contact-links a {
+    font-size: 1.1rem;
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 20px;
+    margin: 0 auto 2rem;
     border: 2px solid #333;
 }
 
@@ -81,7 +93,7 @@ nav ul li a {
 
 .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero h2 {
@@ -172,4 +184,32 @@ html {
 /* Optional: Add some spacing between sections */
 section {
     margin-bottom: 40px;
+}
+
+/* Highlight styles */
+.highlight-link {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.highlight-name {
+    color: var(--highlight-color);
+    font-weight: 600;
+}
+
+.status {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.education-item {
+    margin-bottom: 0.5rem;
 } 
