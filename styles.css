@@ -184,15 +184,15 @@ footer {
         align-items: center;
         gap: 1rem;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .hero h2 {
         font-size: 1.2rem;
     }
-    
+
     .contact-links {
         flex-direction: column;
         align-items: center;
@@ -308,4 +308,20 @@ section {
 .cv-link:hover {
     background-color: var(--cv-color);
     color: white;
-} 
+}
+/* Resume sections and responsive navigation. */
+:root { --highlight-color: #23649e; --link-color: #23649e; }
+nav ul { flex-wrap: wrap; gap: 0.75rem 1.5rem; }
+nav a.active { color: var(--highlight-color); text-decoration: underline; text-underline-offset: 6px; }
+.hero .contact-links { flex-wrap: wrap; gap: 0.75rem; }
+.subtitle { font-weight: 600; color: var(--primary-color); }
+.bio { max-width: 600px; margin: 1rem auto; }
+.detail-list { padding-left: 1.25rem; }
+.detail-list li, #skills p { margin-bottom: 0.75rem; }
+a:focus-visible { outline: 3px solid var(--highlight-color); outline-offset: 4px; }
+@media (max-width: 600px) {
+    nav ul, .hero .contact-links { flex-direction: row; }
+    .hero { padding: 1.5rem 1rem; }
+    header { margin-bottom: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

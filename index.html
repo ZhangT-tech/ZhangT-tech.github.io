@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tong Zhang - Computer Science Student at KAUST</title>
+    <title>Tong Zhang - PhD Student at KAUST</title>
+    <meta name="description" content="Tong Zhang, PhD student at KAUST researching generative AI safety, diffusion models, and video generation and editing.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +13,10 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#thoughts">Thoughts</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#service">Service</a></li>
             </ul>
         </nav>
     </header>
@@ -24,56 +28,115 @@
             </div>
             <h1 class="main-title">Tong Zhang</h1>
             <div class="contact-links">
-                <a href="https://github.com/ZhangT-tech" target="_blank" class="github-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/tong-zhang-53498b1a1/" target="_blank" class="linkedin-link">LinkedIn</a>
-                <a href="https://scholar.google.com/citations?user=1eaWNBoAAAAJ&hl=en" target="_blank" class="scholar-link">Google Scholar</a>
+                <a href="https://github.com/ZhangT-tech" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/tong-zhang-53498b1a1/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=1eaWNBoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="scholar-link">Google Scholar</a>
             </div>
-            <p class="education-item">Ph.D. in Computer Science, KAUST <span class="status">(In Progress)</span></p>
-            <p class="education-item">M.S. in Computer Science, KAUST</p>
-            <p class="education-item">B.S. in Computer Science, SUSTech</p>
+            <p class="subtitle">PhD Student · Computer Science · KAUST</p>
+            <p class="bio">I study generative AI safety, text-to-image diffusion, video generation and editing, multimodal learning, and continual learning.</p>
+            <div class="contact-links">
+                <a href="mailto:tongzhang981314@gmail.com">Email</a>
+                <a href="Resumes_PHD.pdf" class="cv-link" download>Download CV</a>
+            </div>
         </section>
 
         <section id="publications" class="section">
             <h2>Publications</h2>
             <div class="publication-item">
-                <h3>Motion-Aware Concept Alignment for Consistent Video Editing</h3>
+                <h3>MoCA-Video: Motion-Aware Concept Alignment for Consistent Video Editing</h3>
                 <p class="publication-meta"><span class="highlight-name">T Zhang</span>, JC Leon Alcazar, B Ghanem</p>
-                <p class="publication-meta">arXiv preprint, 2024</p>
-                <a href="https://arxiv.org/abs/2506.01004" target="_blank" class="highlight-link">Paper</a>
+                <p class="publication-meta">arXiv preprint, 2025</p>
+                <a href="https://arxiv.org/abs/2506.01004" target="_blank" rel="noopener noreferrer" class="highlight-link">Paper</a>
             </div>
             <div class="publication-item">
                 <h3>Clinical Pixel Feature Recalibration Module for Ophthalmic Image Classification</h3>
                 <p class="publication-meta">JL Zhao, X Zhang, X Wu, ZX Zhang, <span class="highlight-name">T Zhang</span>, H Li, Y Hu, J Liu</p>
                 <p class="publication-meta">International Conference on Artificial Neural Networks, 87-98, 2023</p>
-                <a href="https://link-springer-com.kaust.idm.oclc.org/book/10.1007/978-3-031-44216-2" target="_blank" class="highlight-link">Paper</a>
+                <a href="https://link.springer.com/book/10.1007/978-3-031-44216-2" target="_blank" rel="noopener noreferrer" class="highlight-link">Paper</a>
             </div>
             <div class="publication-item">
                 <h3>MatchDiffusion: Training-free Generation of Match-cuts</h3>
                 <p class="publication-meta">A Pardo*, F Pizzati*, <span class="highlight-name">T Zhang</span>, A Pondaven, P Torr, JC Perez, B Ghanem</p>
                 <p class="publication-meta">International Conference on Computer Vision, ICCV 2025</p>
-                <a href="https://arxiv.org/pdf/2411.18677" target="_blank" class="highlight-link">Paper</a>
+                <a href="https://arxiv.org/pdf/2411.18677" target="_blank" rel="noopener noreferrer" class="highlight-link">Paper</a>
             </div>
             <div class="publication-item">
                 <h3>Retinex-Based hierarchical self-adapted curves estimation for low-light image enhancement</h3>
                 <p class="publication-meta">J Wen, C Wu, <span class="highlight-name">T Zhang</span>, Y Yu, P Swierczynski</p>
                 <p class="publication-meta">arXiv preprint, 2023</p>
-                <a href="https://arxiv.org/pdf/2308.08197.pdf" target="_blank" class="highlight-link">Paper</a>
+                <a href="https://arxiv.org/pdf/2308.08197.pdf" target="_blank" rel="noopener noreferrer" class="highlight-link">Paper</a>
             </div>
         </section>
 
-        <section id="thoughts" class="section">
-            <h2>Thoughts & Articles</h2>
-            <div class="thought-item">
-                <h3>Article Title</h3>
-                <p class="thought-meta">Date</p>
-                <p>Excerpt goes here...</p>
-                <a href="#" class="highlight-link">Read More</a>
-            </div>
+        <section id="research" class="section">
+            <h2>Research Projects</h2>
+            <article class="publication-item">
+                <h3>DiSCO: Generative AI Safety</h3>
+                <p class="publication-meta">Preprint · Under review</p>
+                <p>A training-free, model- and architecture-agnostic safeguard using distribution-guided contrastive prompt optimization. Reduced average attack success rate from 23.6% to 2.4% (NudeNet) across the evaluated settings, while maintaining or improving generation quality.</p>
+                <a href="https://arxiv.org/abs/2608.17067" target="_blank" rel="noopener noreferrer">Paper</a>
+            </article>
+            <article class="publication-item">
+                <h3>CAPTAIN: Diffusion Model Privacy</h3>
+                <p class="publication-meta">Preprint · Manuscript under review</p>
+                <p>A training-free inference-time framework that combines frequency-aware initialization with spatially and temporally localized semantic feature injection to reduce memorization. Reduced SSCD copy-detection similarity from 0.40 to 0.25 versus BE-Global on Stable Diffusion v1.4 while preserving prompt fidelity.</p>
+                <a href="https://arxiv.org/abs/2512.10655" target="_blank" rel="noopener noreferrer">Paper</a>
+            </article>
+            <article class="publication-item">
+                <h3>CoLaP: Continual Multimodal Prompt Learning</h3>
+                <p class="publication-meta">Manuscript under review</p>
+                <p>Continual adaptation of frozen vision backbones through semantic clustering of VLM-generated captions, contrastive alignment, and teacher-student distillation, retaining image-only inference. Improved ImageNet-O accuracy from 63.24% to 68.50% over L2P, with evaluation across five out-of-domain benchmarks.</p>
+            </article>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <article class="publication-item">
+                <h3>Qualcomm Mentorship Programme</h3>
+                <p class="publication-meta">Qualcomm AI Research · Remote · June 2025 - Present</p>
+                <p>Generative AI safety research through a year-long mentorship collaboration, including DiSCO. Ongoing work investigates diffusion-based red teaming and defense through joint and disjoint trajectory analysis, using early denoising signals to detect malicious intent, adversarial edits, and concealed malicious patches.</p>
+            </article>
+            <article class="publication-item">
+                <h3>Software Developer · CAMEL-AI</h3>
+                <p class="publication-meta">Open-Source Multi-Agent Framework · Remote · June - December 2023</p>
+                <p>Co-developed and deployed task-driven LLM multi-agent workflows with task planning, expert role assignment, role-playing dialogue, and shared environment context. Designed dependency-aware task decomposition and expert coordination, and improved memory and context handling through structured insight extraction.</p>
+            </article>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <article class="publication-item">
+                <h3>King Abdullah University of Science and Technology</h3>
+                <p>PhD Student · June 2025 - Present · Saudi Arabia</p>
+                <p class="education-item">MS, Computer Science (with Thesis) · September 2023 - June 2025</p>
+                <p>Master's research focused on diffusion-based video generation and editing, including MatchDiffusion and MoCA-Video.</p>
+            </article>
+            <article class="publication-item">
+                <h3>Southern University of Science and Technology</h3>
+                <p class="publication-meta">Bachelor of Engineering, Computer Science · August 2019 - August 2023 · China</p>
+                <p>Final-year project: rubric-guided LLM report grading, comparing zero-shot and few-shot prompting against human scores.</p>
+            </article>
+        </section>
+
+        <section id="service" class="section">
+            <h2>Academic Service &amp; Teaching</h2>
+            <ul class="detail-list">
+                <li>Reviewer, BeNTO Workshop, NeurIPS 2026</li>
+                <li>Teaching Assistant, Deep Learning in Visual Computing (CSC323), Spring 2026</li>
+                <li>Workshop Organizer, CVPR Workshop on Computer Vision for the Environment (CVEU), 2025</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <p><strong>Languages:</strong> Python (primary), C/C++, SQL, R, Bash, LaTeX</p>
+            <p><strong>ML / AI:</strong> PyTorch, Hugging Face, Diffusers, LoRA, GRPO, distributed training, prompt optimization</p>
+            <p><strong>Tools:</strong> Git, Docker, Linux, Weights &amp; Biases, pandas, NumPy, scikit-learn</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Tong Zhang</p>
+        <p>&copy; 2026 Tong Zhang</p>
     </footer>
 
     <script src="script.js"></script>
