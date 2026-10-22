@@ -325,3 +325,7 @@ a:focus-visible { outline: 3px solid var(--highlight-color); outline-offset: 4px
     header { margin-bottom: 2rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Paper titles carry the paper links. */
+.publication-item h3 a { display: inline; padding: 0; margin: 0; border: 0; color: var(--highlight-color); font-weight: 700; }
+.publication-item h3 a:hover { color: var(--highlight-color); background: transparent; text-decoration: underline; }
