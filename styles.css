@@ -330,11 +330,13 @@ a:focus-visible { outline: 3px solid var(--highlight-color); outline-offset: 4px
 .publication-item h3 a { display: inline; padding: 0; margin: 0; border: 0; color: var(--highlight-color); font-weight: 700; }
 .publication-item h3 a:hover { color: var(--highlight-color); background: transparent; text-decoration: underline; }
 
-/* Teaser figures preserve their full aspect ratio beside paper details. */
-body { max-width: 1040px; }
-.paper-row { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
-.publication-item .paper-teaser { display: block; padding: 0; margin: 0; border: 0; background: transparent; }
-.paper-teaser img { display: block; width: 100%; height: auto; border-radius: 4px; }
+/* Compact left-hand teasers: paper text determines each row's height. */
+.paper-row { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.publication-item .paper-teaser { display: block; position: relative; padding: 0; margin: 0; border: 0; background: transparent; }
+.paper-teaser img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
 .paper-details { min-width: 0; }
 .paper-details h3 { font-size: 1.05rem; line-height: 1.45; }
-@media (max-width: 650px) { .paper-row { grid-template-columns: 1fr; gap: 1rem; } }
+@media (max-width: 600px) {
+    .paper-row { grid-template-columns: 100px minmax(0, 1fr); gap: 0.75rem; padding: 1rem; }
+    .paper-details h3 { font-size: 0.95rem; }
+}
