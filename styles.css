@@ -331,7 +331,7 @@ a:focus-visible { outline: 3px solid var(--highlight-color); outline-offset: 4px
 .publication-item h3 a:hover { color: var(--highlight-color); background: transparent; text-decoration: underline; }
 
 /* Compact left-hand teasers: paper text determines each row's height. */
-.paper-row { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.paper-row { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 1rem; align-items: stretch; }
 .publication-item .paper-teaser { display: block; position: relative; padding: 0; margin: 0; border: 0; background: transparent; }
 .paper-teaser img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 4px; }
 .paper-details { min-width: 0; }
