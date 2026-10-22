@@ -329,3 +329,12 @@ a:focus-visible { outline: 3px solid var(--highlight-color); outline-offset: 4px
 /* Paper titles carry the paper links. */
 .publication-item h3 a { display: inline; padding: 0; margin: 0; border: 0; color: var(--highlight-color); font-weight: 700; }
 .publication-item h3 a:hover { color: var(--highlight-color); background: transparent; text-decoration: underline; }
+
+/* Teaser figures preserve their full aspect ratio beside paper details. */
+body { max-width: 1040px; }
+.paper-row { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
+.publication-item .paper-teaser { display: block; padding: 0; margin: 0; border: 0; background: transparent; }
+.paper-teaser img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.paper-details { min-width: 0; }
+.paper-details h3 { font-size: 1.05rem; line-height: 1.45; }
+@media (max-width: 650px) { .paper-row { grid-template-columns: 1fr; gap: 1rem; } }
